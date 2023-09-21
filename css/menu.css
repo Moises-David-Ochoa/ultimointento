@@ -1,0 +1,37 @@
+/* style.css */
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: url('https://imgs.search.brave.com/KDQQvLDGPAEcqmfVZ8-NI-hC-drQTRehOA2yHAl5IoE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzE5LzMzLzE2/LzM2MF9GXzExOTMz/MTYzM19LdTBocW9m/U3dtV1N1WHA1MHdQ/aGQzQjNrazZncGlp/ei5qcGc') center/cover no-repeat;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    background: linear-gradient(to bottom, #6a0572, #ab83a1);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+

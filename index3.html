@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 21</title>
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+    <div class="container">
+        <div class="messages">
+            <p>Por favor, para inicia sesión:</p>
+            <p>Usuario: leonela.maribel</p>
+            <p>Contraseña: t asi ponlo 21deseptiembre (sin espacios)</p>
+            <p>cuando entres hay tres botones uno es del poema que escribi ahorita</p>
+            <p>el segundo es una fotito tuya que me gusto mucho </p>
+            <p>y el ultimo es un collage de las fotos que me diste dale clic que se escucahra una cancion</p>
+            <p>esto estara en linea para ti cuando quieras verlo siempre y cuando tengas el link</p>
+            <p>una vez que entres dale clic sonara una musica</p>
+        </div>
+        <div class="video-container">
+            <video id="video" controls autoplay>
+                <source src="lobo.mp4" type="video/mp4">
+                Tu navegador no admite la reproducción de video.
+            </video>
+        </div>
+        <div class="button-container">
+            <button id="aqui">Aqui</button>
+            <button id="regresar">Regresar</button>
+            <button id="toggleSound">Toggle Sonido</button>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById("video");
+        const toggleSoundButton = document.getElementById("toggleSound");
+        
+        toggleSoundButton.addEventListener("click", function() {
+            if (video.muted) {
+                video.muted = false;
+                toggleSoundButton.textContent = "Silenciar";
+            } else {
+                video.muted = true;
+                toggleSoundButton.textContent = "Activar Sonido";
+            }
+        });
+
+        document.getElementById("aqui").addEventListener("click", function() {
+            // Agregar tu código aquí para el botón "Aqui"
+        });
+
+        document.getElementById("regresar").addEventListener("click", function() {
+            // Agregar tu código aquí para el botón "Regresar"
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

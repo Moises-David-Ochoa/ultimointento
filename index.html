@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/d438f9a7b3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <form id="loginForm">
+                    <h2>Espero te guste</h2>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-heart-pulse fa-beat"></i>
+                        <input type="email" id="email" required>
+                        <label for="email">usuario</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-regular fa-heart fa-beat-fade"></i>
+                        <input type="password" id="contrasena" required>
+                        <label for="contrasena">Contraseña</label>
+                    </div>
+                    <div class="olvidar">
+                        <label for="#">
+                            <a href="index3.html">Instrucciones</a>
+                        </label>
+                    </div>
+                </form>
+                <button id="loginButton">
+                    Acceder
+                </button>
+                <div class="registrar">
+                    <p>
+                       
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('contrasena');
+        const loginButton = document.getElementById('loginButton');
+
+        loginButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Verificar si el correo y la contraseña son correctos
+            if (emailInput.value === 'leonela.maribel' && passwordInput.value === '21deseptiembre') {
+                // Redirigir al usuario a index1.html
+                window.location.href = 'menu.html';
+            } else {
+                alert('Correo o contraseña incorrectos. Por favor, inténtalo de nuevo.');
+            }
+        });
+    </script>
+</body>
+</html>
